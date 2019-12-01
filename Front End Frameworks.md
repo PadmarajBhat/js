@@ -19,7 +19,14 @@
             * scope : determines the connection between controller and template and passes it **bidirectionally**
             * controller: passes the required data for templates
             * router: interacts with multiple controller for managing the interrelated data  between controllers.
-
+   * Benefits:
+      * 2-way data binding: Model and view can also update the data which makes it easy to build dynamic views.
+      * directives : attaching special characterstics to the part of the DOM like repeat.
+      * dependency injection : makes it highly testable
+   * Concerns:
+      * no server side coding rendering
+      * Ajs1 is incompatible with Ajs2
+      * 2 way binding might cause performance issue too
 
 * Often in the blogs you would find the reference to [https://en.wikipedia.org/wiki/Spaghetti_code] which means nothing more than unmanaged code. And all framework makes it easier manage the code, like having the folder structure where all the dependent files go and easy coding syntax which reduces the common design hurdles.
 
