@@ -19,3 +19,6 @@
             * scope : determines the connection between controller and template and passes it **bidirectionally**
             * controller: passes the required data for templates
             * router: interacts with multiple controller for managing the interrelated data  between controllers.
+
+
+* Often in the blogs you would find the reference to [https://en.wikipedia.org/wiki/Spaghetti_code] which means nothing more than unmanaged code. And all framework makes it easier manage the code, like having the folder structure where all the dependent files go and easy coding syntax which reduces the common design hurdles.
