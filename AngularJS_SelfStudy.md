@@ -21,3 +21,11 @@
 
 * ``` ng generate component xyz``` : can only be executed under **app/src/** directory where *app.component.* files are present
     * if we attempt outside src directory then we would get error : **Could not find an NgModule. Use the skip-import option to skip importing in NgModule.**
+
+
+* ```ng new app``` : creates a new app and in the sample html provided as an example has lot of basics covered in it. Good for the beginner and for tricky problem solving. 
+        * for eg tricky problem : how do keep all of the example html and css code in your app but on your new component should get the entire fresh page ?
+            * **ans** : move all the app.component.html entries to a new component. then include the component in routes in the app-routing.module.ts. So, now, app.component.html page only one statement ```<router-outlet></router-outlet>``` and root url maps to a new component. 
+            * at this point you create another component where your business component and routelink this component from older component.
+            * this would load the new component from old component and hence old components are replaced by your new component.
+            * as in https://stackoverflow.com/questions/42129460/hide-parent-view-in-angular-2
