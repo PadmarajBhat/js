@@ -12,9 +12,12 @@
      * The default app is an ad for angular. However, it is an good example of lot of components in angular.
             * it has interactive command display which may be using 2 way communication
             * redirection to lot of pages
-                * documentation
-                * github * rating
-                * twitter
-                * CLI documentation
-                * so many more
+                    * documentation
+                    * github * rating
+                    * twitter
+                    * CLI documentation
+                    * so many more
             * it is an example for SPA (Single page application). It would have been better to have multiple app, route, and service in the example too.
+
+* ``` ng generate component xyz``` : can only be executed under **app/src/** directory where *app.component.* files are present
+    * if we attempt outside src directory then we would get error : **Could not find an NgModule. Use the skip-import option to skip importing in NgModule.**
