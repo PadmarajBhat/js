@@ -29,3 +29,8 @@
             * at this point you create another component where your business component and routelink this component from older component.
             * this would load the new component from old component and hence old components are replaced by your new component.
             * as in https://stackoverflow.com/questions/42129460/hide-parent-view-in-angular-2
+* span vs div :
+    * span indicates it is content within content where as div is generally encompassing bigger entities (though nesting is allowed).
+        * https://stackoverflow.com/a/183536/8693106
+    * when I added a box to a text and that text if part of div then the box would span to entire width of window irrespective of text size (though height is as that of text)
+    * when I add a box to span then the box is limited to text only and not to entire width. Kind of what i wanted. 
