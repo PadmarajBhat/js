@@ -34,3 +34,6 @@
         * https://stackoverflow.com/a/183536/8693106
     * when I added a box to a text and that text if part of div then the box would span to entire width of window irrespective of text size (though height is as that of text)
     * when I add a box to span then the box is limited to text only and not to entire width. Kind of what i wanted. 
+
+* there are 3 ways of transferring data between parent and child components
+    * @Input : Parent to child information transfer and not the other way. Parent should know the child class variables and should set the same in the .html file throgh <app-child> property setting. Child should have the variable declaration with @Input.
