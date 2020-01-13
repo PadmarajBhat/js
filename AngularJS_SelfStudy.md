@@ -40,3 +40,6 @@
     * @Output and event emitter: Child to parent information txfr.
         * child should have @Ouput in its class variable and Parent should wait for an event from child to be emitted. Till the child gets the value for the parent variable the variable does not have any value. Child needs to trigger an event to assign the value to parent.
         * Note that there can be multiple @output in the child as in : https://stackoverflow.com/a/40023776/8693106
+    * @viewChild and ngAfterViewInit: Parent peeps into child class variable on its own as if to hack the values.
+        * child does no special operation except that it populates its own regular class variable( with no special decorator)
+        * but this requires parent to wait till child executes.
