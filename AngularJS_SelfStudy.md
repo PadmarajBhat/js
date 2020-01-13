@@ -37,3 +37,6 @@
 
 * there are 3 ways of transferring data between parent and child components
     * @Input : Parent to child information transfer and not the other way. Parent should know the child class variables and should set the same in the .html file throgh <app-child> property setting. Child should have the variable declaration with @Input.
+    * @Output and event emitter: Child to parent information txfr.
+        * child should have @Ouput in its class variable and Parent should wait for an event from child to be emitted. Till the child gets the value for the parent variable the variable does not have any value. Child needs to trigger an event to assign the value to parent.
+        * Note that there can be multiple @output in the child as in : https://stackoverflow.com/a/40023776/8693106
