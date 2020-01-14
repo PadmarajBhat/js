@@ -54,3 +54,9 @@
         * https://stackoverflow.com/questions/28846266/ionic-local-storage-vs-using-service
         * https://alligator.io/js/introduction-localstorage-sessionstorage/
             * from the scope perspective service < sessionStorage < localStorage
+
+* button vs hyperlink:
+    * from the flexibility of the action on clicking link, button has more support than hyperlink
+        * performing set of operartion and then emitting an event through button but not through hyperlink ...is it ? Perhaps this is not the right answer. I guess there can be events on hyperlink too !!!
+        * angular buttons : https://material.angular.io/components/button/examples
+        
