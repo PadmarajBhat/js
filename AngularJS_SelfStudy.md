@@ -48,3 +48,5 @@
     * is a method to retain the data from a component and reuse the same in other or same component.
     * However, its scope is limited to single page application life. i.e. if the page refreshes then it looses the value.
         * the service is out of any component like a global variable/service, Dependency injection gives the start of the object initation and subsequent access of object variable and methods. when you reload entire thing goes for refresh and hence the value too.
+    * As it is injected to a component (and not local variable) it stays with latest value even after returning from a component and thus availing the values to other component where it is *Injected*.
+        * to retain the value of the service even after refresh db, file, local storage and session storage can be used.
