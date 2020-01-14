@@ -43,3 +43,8 @@
     * @viewChild and ngAfterViewInit: Parent peeps into child class variable on its own as if to hack the values.
         * child does no special operation except that it populates its own regular class variable( with no special decorator)
         * but this requires parent to wait till child executes.
+
+* service : 
+    * is a method to retain the data from a component and reuse the same in other or same component.
+    * However, its scope is limited to single page application life. i.e. if the page refreshes then it looses the value.
+        * the service is out of any component like a global variable/service, Dependency injection gives the start of the object initation and subsequent access of object variable and methods. when you reload entire thing goes for refresh and hence the value too.
