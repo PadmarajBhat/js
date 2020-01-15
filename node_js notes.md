@@ -27,3 +27,30 @@
        ```
        app.use(cors());
        ```
+       
+    * like the flask app we have express
+      ```
+      https://www.palletsprojects.com/p/flask/
+      from flask import Flask, escape, request
+
+      app = Flask(__name__)
+
+      @app.route('/')
+      def hello():
+          name = request.args.get("name", "World")
+          return f'Hello, {escape(name)}!'
+      ```
+      
+    * we have in express as 
+      ```
+      const express = require('express');
+      const app = express();
+      const router = express.Router();
+      const PORT = 3000;
+      
+      app.listen(PORT, () => { console.log ("listening to port"+PORT);}
+      
+      router.get("/", (req, res, next) => {
+       res.json("Welcome");
+      });
+      ```
