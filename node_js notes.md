@@ -8,3 +8,22 @@
     * this is equivalent to ```pip install``` in python environment.
     * here each install automatically makes an entry into **package.json** dependency key.
   
+* now that environment is ready with required packages in the node env, let us dive to coding.
+  * like that of ```import``` statement in python we have ```require``` in nodejs
+    * ```
+         from sklearn.tree import DecisionTreeRegressor
+         regr_1 = DecisionTreeRegressor(max_depth=2)
+      ```
+    * in the similar analogy:
+      ```
+         const express = require('express');
+         const app = express();
+      ```
+    * like in **DTR** has the first argument as the function to measure the quality of the split
+      ```
+      criterion{“mse”, “friedman_mse”, “mae”}, default=”mse”
+      ```
+      * similarly we have
+       ```
+       app.use(cors());
+       ```
