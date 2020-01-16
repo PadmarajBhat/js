@@ -60,3 +60,12 @@
         * performing set of operartion and then emitting an event through button but not through hyperlink ...is it ? Perhaps this is not the right answer. I guess there can be events on hyperlink too !!!
         * angular buttons : https://material.angular.io/components/button/examples
         
+* ng-form : aggregates form-control class
+* form-control: lets us have validation on the input field
+    ```
+    <input id="name" name="name" class="form-control"
+      required minlength="4" appForbiddenName="bob"
+      [(ngModel)]="hero.name" #name="ngModel" >
+    ```
+    * input can not only take text but also file and can be submit button too
+    * id is more for CSS selection and name is for what has to be sent to server in a form. name value depends on the server programming language and in compliance to it.
