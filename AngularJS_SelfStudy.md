@@ -69,3 +69,7 @@
     ```
     * input can not only take text but also file and can be submit button too
     * id is more for CSS selection and name is for what has to be sent to server in a form. name value depends on the server programming language and in compliance to it.
+
+
+* https://angular.io/api/forms/NgModel : simple standard control example fails with below error
+        * There is no directive with "exportAs" set to "ngModel" ("
