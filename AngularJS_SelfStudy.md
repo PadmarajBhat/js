@@ -79,3 +79,4 @@
     * yes it is true that the data in the view auto syncs with data in the class then where it is applicable.
         * usually in accessibility case where increase in font size immediately changes the view. Here submit button is implicit. Change in the size of the font not only changes the class variable but also view. i.e. MVVC
         * https://news.ycombinator.com/item?id=7523890: drop down selection to reflect in other boxes
+    * need to decode the example to understand clearly the concept: https://stackblitz.com/angular/pyoarjpqxal?file=src%2Fapp%2Fapp.component.html
