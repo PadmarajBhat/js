@@ -72,4 +72,5 @@
 
 
 * https://angular.io/api/forms/NgModel : simple standard control example fails with below error
-        * There is no directive with "exportAs" set to "ngModel" ("
+    * There is no directive with "exportAs" set to "ngModel" ("
+    * resolved by adding ```FormModule``` in app.module.ts as indicated in https://stackoverflow.com/questions/38648407/angular2-error-there-is-no-directive-with-exportas-set-to-ngform
