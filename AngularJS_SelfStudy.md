@@ -74,3 +74,8 @@
 * https://angular.io/api/forms/NgModel : simple standard control example fails with below error
     * There is no directive with "exportAs" set to "ngModel" ("
     * resolved by adding ```FormModule``` in app.module.ts as indicated in https://stackoverflow.com/questions/38648407/angular2-error-there-is-no-directive-with-exportas-set-to-ngform
+
+* 2 way data binding example:
+    * yes it is true that the data in the view auto syncs with data in the class then where it is applicable.
+        * usually in accessibility case where increase in font size immediately changes the view. Here submit button is implicit. Change in the size of the font not only changes the class variable but also view. i.e. MVVC
+        * https://news.ycombinator.com/item?id=7523890: drop down selection to reflect in other boxes
