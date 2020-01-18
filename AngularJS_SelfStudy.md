@@ -84,7 +84,7 @@
             * [(size)] ='fontSizePx' : has lead to both direction value change. 
                 * First parent value goes to child (size has @Input)
                 * and since it is 2 way, + or -  button increases the size variable value and also changes value of fontSizePx.
-    
+            * (sizeChange)="fontSizePx=$event" : sizeChange is the child variable where an output is expected to be kept (@Output) and hence parent component fontSizePx variable is listening for the event which child would emit. In this example, illustration is done to show how it had to be done without 2 way data binding.
 * https://medium.com/better-programming/what-is-the-difference-between-for-in-and-for-of-in-javascript-650952654e97
     * for...in for enumerables
     * for ...of for iterators
