@@ -80,3 +80,7 @@
         * usually in accessibility case where increase in font size immediately changes the view. Here submit button is implicit. Change in the size of the font not only changes the class variable but also view. i.e. MVVC
         * https://news.ycombinator.com/item?id=7523890: drop down selection to reflect in other boxes
     * need to decode the example to understand clearly the concept: https://stackblitz.com/angular/pyoarjpqxal?file=src%2Fapp%2Fapp.component.html
+    
+* https://medium.com/better-programming/what-is-the-difference-between-for-in-and-for-of-in-javascript-650952654e97
+    * for...in for enumerables
+    * for ...of for iterators
