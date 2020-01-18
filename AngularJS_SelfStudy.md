@@ -84,3 +84,7 @@
 * https://medium.com/better-programming/what-is-the-difference-between-for-in-and-for-of-in-javascript-650952654e97
     * for...in for enumerables
     * for ...of for iterators
+* https://towardsdatascience.com/3-python-libraries-you-cant-miss-in-2020-2ee4a7277cf1
+    * python_dateutil : to parse date string in a string
+    * Markdown: to converty markdown to html
+    * colorama: coloring pring statements
