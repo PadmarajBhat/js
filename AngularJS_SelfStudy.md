@@ -96,3 +96,6 @@
     * it is used for transmitting messages from publisher to subscriber.
     * key difference between observable to promises is that observables can send multiple values to subscriber.
     * it is a lazy evaluation and hence till the subscribed it wont evaluate.
+
+* facing issue:  Property 'map' does not exist on type 'Observable<Response>'
+       * stackoverflow suggests : npm install --save rxjs-compat@6
