@@ -92,3 +92,7 @@
     * python_dateutil : to parse date string in a string
     * Markdown: to converty markdown to html
     * colorama: coloring pring statements
+* Observables and its subscribers : https://medium.com/@luukgruijs/understanding-creating-and-subscribing-to-observables-in-angular-426dbf0b04a3
+    * it is used for transmitting messages from publisher to subscriber.
+    * key difference between observable to promises is that observables can send multiple values to subscriber.
+    * it is a lazy evaluation and hence till the subscribed it wont evaluate.
