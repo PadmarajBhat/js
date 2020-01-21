@@ -98,4 +98,7 @@
     * it is a lazy evaluation and hence till the subscribed it wont evaluate.
 
 * facing issue:  Property 'map' does not exist on type 'Observable<Response>'
-       * stackoverflow suggests : npm install --save rxjs-compat@6
+        * stackoverflow suggests : npm install --save rxjs-compat@6
+        * *ans* : subscriber has to be given to any observable. subscriber can listen to observable and *next* function can assign the value from observable to class variable.
+
+
