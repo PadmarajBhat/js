@@ -102,4 +102,5 @@
         * *ans* : subscriber has to be given to any observable. subscriber can listen to observable and *next* function can assign the value from observable to class variable.
 
 * facing issue: subscriber is asynchronous call. statements below to it is executed before to subscribe next function execution
-
+    * subscribe function as 3 parameters : next, err and completion. all the 3 are functions as arguments. Anything in completion will be executed last.
+    
