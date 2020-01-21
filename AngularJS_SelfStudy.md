@@ -101,4 +101,5 @@
         * stackoverflow suggests : npm install --save rxjs-compat@6
         * *ans* : subscriber has to be given to any observable. subscriber can listen to observable and *next* function can assign the value from observable to class variable.
 
+* facing issue: subscriber is asynchronous call. statements below to it is executed before to subscribe next function execution
 
