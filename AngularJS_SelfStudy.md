@@ -119,3 +119,7 @@
 * i#4 : html for tag does not read the latest class variable value
     * *Ans*: the html reads the class variable correctly. it is the service which does the async call and hence service class variable does not gets an update but it is returned as an empty array. i#3 solves the issue
     
+* **dialogflow**:
+    * it requires key file to be downloaded from google cloud.
+    * in that file private key will be in the form of : ---begin......---end---\n
+        * it has to be copied as is or else you would get error :https://github.com/googleapis/google-cloud-node/issues/2658
