@@ -104,5 +104,6 @@
 * facing issue: subscriber is asynchronous call. statements below to it is executed before to subscribe next function execution
     * subscribe function as 3 parameters : next, err and completion. all the 3 are functions as arguments. Anything in completion will be executed last.
     
-* constructor waiting for backend to serve the data ends up executing the html before to api response.
+* i#3 : constructor waiting for backend to serve the data ends up executing the html before to api response.
+* i#4 : html for tag does not read the latest class variable value
     
