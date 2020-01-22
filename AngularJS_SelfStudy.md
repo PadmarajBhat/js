@@ -109,6 +109,13 @@
         * use http.get().toPromise() to convert the observable to promise. It works for the case when api returns only one value and not multiple.
         * now that we have to wait on it use *await* before the get call: await http.get().toPromise()
         * since we need to use await, move the code to a seperate function and define it as *async*
+    * **2** : use the service class variable in the component template (html)
+        * service is injected to the component through dependency injection (constructor argument).
+        * thus we have access to the variables of the service in the component.
+        * like http.serviceVariable in the template [direct reference through dot operator].
+        * this avoids the local variable and removes the complexity of syncing service and local component class variable
+        * code condenses heavily !!!
+        
 * i#4 : html for tag does not read the latest class variable value
     * *Ans*: the html reads the class variable correctly. it is the service which does the async call and hence service class variable does not gets an update but it is returned as an empty array. i#3 solves the issue
     
