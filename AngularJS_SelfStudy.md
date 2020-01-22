@@ -105,5 +105,10 @@
     * subscribe function as 3 parameters : next, err and completion. all the 3 are functions as arguments. Anything in completion will be executed last.
     
 * i#3 : constructor waiting for backend to serve the data ends up executing the html before to api response.
+    * **1**: convert the observable to promise and wait on it
+        * use http.get().toPromise() to convert the observable to promise. It works for the case when api returns only one value and not multiple.
+        * now that we have to wait on it use *await* before the get call: await http.get().toPromise()
+        * since we need to use await, move the code to a seperate function and define it as *async*
 * i#4 : html for tag does not read the latest class variable value
+    * *Ans*: the html reads the class variable correctly. it is the service which does the async call and hence service class variable does not gets an update but it is returned as an empty array. i#3 solves the issue
     
