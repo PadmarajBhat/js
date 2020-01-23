@@ -67,3 +67,6 @@
       * ```import {NgbModule} from '@ng-bootstrap/ng-bootstrap';```
       * or
       * ``` import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';```
+
+* typeof variable : gives you the python equivalent of type(variable) output
+* when an array is replied from a function, it is possible that the reciever gets the object with array indexes as keys and respective index values as the key value of the object.
