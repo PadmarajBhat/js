@@ -134,3 +134,28 @@
     * *padding* is handly when u want the item to be a distant away from the border. The padding can be applied both to the page or a small span.
     * *float* is handy to right align or left align : for user and bot text alignment in chat window.
     * *width* and *height* of the div determines the box parameter of the div.
+
+* **route guard**:
+    * helps us to control the navigation: like only through parent component the current component has to be loaded i.e. only after login, load the home page.
+        * ng generate guard auth/auth :  to generate 2 files in auth folder : auth.guard.ts and auth.guard.spec.ts
+        * a constructor might not be there, create one : constructor(private router: Router) {}
+            * you may have to include Router in the import under @angular/router
+        * to stop navigation directly to a url:
+        ```
+        canActivate(
+        next: ActivatedRouteSnapshot,
+        state: RouterStateSnapshot,
+        ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+
+        if (state.root.component == null) {
+      
+        this.router.navigate(['/']);
+        console.log("routing to home directory");
+        return false;
+      
+        }
+        return true;
+        }
+        ```
+        * as u can note, the router (this) uses the DI introduced router we talked about in the previous point.
+            * it was a random search for some difference between target url through parent link and direct access. I found componet to have the appcomonent class defined there for routed case. It was null in case of direct access.
