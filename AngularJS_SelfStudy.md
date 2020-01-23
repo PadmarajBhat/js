@@ -126,3 +126,11 @@
 
 * i#5 : how dow we handle the async func calls in express router
     * *ans*: in the router.get("/url", **async**(req,res,next){});
+
+* **CSS**: 
+    * box-shadow : gives the border and shadow to the *div* or *span*
+    * *div* directly has the *align=center* option which can be handy in placing the chat window *div* at the center of the page.
+    * when placed in a single *div* , *input* and *button* align inline.
+    * *padding* is handly when u want the item to be a distant away from the border. The padding can be applied both to the page or a small span.
+    * *float* is handy to right align or left align : for user and bot text alignment in chat window.
+    * *width* and *height* of the div determines the box parameter of the div.
