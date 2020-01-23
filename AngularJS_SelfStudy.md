@@ -123,3 +123,6 @@
     * it requires key file to be downloaded from google cloud.
     * in that file private key will be in the form of : ---begin......---end---\n
         * it has to be copied as is or else you would get error :https://github.com/googleapis/google-cloud-node/issues/2658
+
+* i#5 : how dow we handle the async func calls in express router
+    * *ans*: in the router.get("/url", **async**(req,res,next){});
