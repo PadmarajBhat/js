@@ -172,3 +172,16 @@
         * as u can note, the router (this) uses the DI introduced router we talked about in the previous point.
             * it was a random search for some difference between target url through parent link and direct access. I found componet to have the appcomonent class defined there for routed case. It was null in case of direct access.
             
+* children routing:
+    ```
+    {
+    path: 'reports', component: ReportsComponent,
+    children: [
+      //{ path: '', component: ReportsComponent },
+      { path: 'recruitedby', component: RecruitedbyComponent }
+    ]
+    }
+    ```
+    * the only 2 advantages I have seen so far for parent child config are that:
+        * relative reference of the url: recruitby is actually reports/recruits by
+        * perhaps the state.root.component for recruitby is "reports" : for authentication purpose only
