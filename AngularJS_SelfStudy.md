@@ -140,6 +140,18 @@
         * ng generate guard auth/auth :  to generate 2 files in auth folder : auth.guard.ts and auth.guard.spec.ts
         * a constructor might not be there, create one : constructor(private router: Router) {}
             * you may have to include Router in the import under @angular/router
+        * in the router file, there are already path url defined:
+        ```
+        { path: 'xyz', component: XyzComponent},
+        ```
+        should be changed to
+        ```
+        import { AuthGuard } from './auth/auth.guard';
+        .
+        .
+        
+        { path: 'xyz', component: XyzComponent, canActivate: [AuthGuard]}
+        ```
         * to stop navigation directly to a url:
         ```
         canActivate(
@@ -159,3 +171,4 @@
         ```
         * as u can note, the router (this) uses the DI introduced router we talked about in the previous point.
             * it was a random search for some difference between target url through parent link and direct access. I found componet to have the appcomonent class defined there for routed case. It was null in case of direct access.
+            
