@@ -203,3 +203,8 @@
             ```
             * intuition here is that we are dynamically adding a element to already loaded html associate a promise object to it.
             * in the caller you just have to wait till the promise object to have resolved state.
+            
+* **services** : 
+    * if present in the component, then a new instance is created each time the component is invoked. Thus cannot be used as the data holder. May be only for the services like http calls are best use cases.
+    * services if not used are taken out from the final build
+    * @Injectable directive makes the serivce DI capable for component
