@@ -185,3 +185,6 @@
     * the only 2 advantages I have seen so far for parent child config are that:
         * relative reference of the url: recruitby is actually reports/recruits by
         * perhaps the state.root.component for recruitby is "reports" : for authentication purpose only
+
+* decoding : https://www.youtube.com/watch?v=tygNPckEZbw
+    * like we have *extern* in *C*, we have *declare* in *javascript*. A declaration in the current module/file indicating the some other module has the definition of the variable.
