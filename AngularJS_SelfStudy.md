@@ -188,3 +188,6 @@
 
 * decoding : https://www.youtube.com/watch?v=tygNPckEZbw
     * like we have *extern* in *C*, we have *declare* in *javascript*. A declaration in the current module/file indicating the some other module has the definition of the variable.
+    * Now there is a debatable point :
+        * the google chart script is loaded in the index.html file. This is against the lazy loading principle. Can make the initial load slower.
+            * there are discussions like https://stackoverflow.com/a/50674496/8693106 which talk about the loading the scipt in the component but that is not the standard way of lazy loading mechanism in Angular.
