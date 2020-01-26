@@ -54,20 +54,6 @@
        res.json("Welcome");
       });
       ```
-* @angular/material, ng-bootstrap and bootstrap can be used simultaneously for beautiful web page :)
-  * Material: we need to import the respective component at **app.module.ts** and straight away use it in needed component's html file.
-  * ng-bootstrap: requires bootstrap. 
-    * first install bootstrap : ```npm install bootstrap```
-    * refer bootstrap in the style listing:
-       * goto *node_modules* --> *bootstrap* --> css --> bootstrap.min.css then right click on the file and copy project path
-       * goto **.angular-cli.json** file and in that **styles** key should have **styles.css** as one elemnt in the array, add the copied path as the second element. change the back slash to forward slash and remove anything before to **node_module** and add **../** before it.
-    * just with these 2 steps you could observe chanages in the render of all the component's html.
-    * now install ng-bootstrap : ```npm install ng-bootstrap```
-    * now either of one can be done at **app.module.ts**:
-      * ```import {NgbModule} from '@ng-bootstrap/ng-bootstrap';```
-      * or
-      * ``` import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';```
-
 * typeof variable : gives you the python equivalent of type(variable) output
 * when an array is replied from a function, it is possible that the reciever gets the object with array indexes as keys and respective index values as the key value of the object.
 
