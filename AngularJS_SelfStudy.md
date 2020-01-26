@@ -211,3 +211,16 @@
 
 * **BootStrap**:
     * it too has card and has better variation when compared to angular material. Yesterday, I tried to use Angular Material and found it difficult to align center of the page but Bootstrap already has one dedicated for center
+    * @angular/material, ng-bootstrap and bootstrap can be used simultaneously for beautiful web page :)
+  * Material: we need to import the respective component at **app.module.ts** and straight away use it in needed component's html file.
+  * ng-bootstrap: requires bootstrap. 
+    * first install bootstrap : ```npm install bootstrap```
+    * refer bootstrap in the style listing:
+       * goto *node_modules* --> *bootstrap* --> css --> bootstrap.min.css then right click on the file and copy project path
+       * goto **.angular-cli.json** file and in that **styles** key should have **styles.css** as one elemnt in the array, add the copied path as the second element. change the back slash to forward slash and remove anything before to **node_module** and add **../** before it.
+    * just with these 2 steps you could observe chanages in the render of all the component's html.
+    * now install ng-bootstrap : ```npm install ng-bootstrap```
+    * now either of one can be done at **app.module.ts**:
+      * ```import {NgbModule} from '@ng-bootstrap/ng-bootstrap';```
+      * or
+      * ``` import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';```
