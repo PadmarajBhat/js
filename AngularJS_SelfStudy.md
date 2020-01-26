@@ -208,3 +208,6 @@
     * if present in the component, then a new instance is created each time the component is invoked. Thus cannot be used as the data holder. May be only for the services like http calls are best use cases.
     * services if not used are taken out from the final build
     * @Injectable directive makes the serivce DI capable for component
+
+* **BootStrap**:
+    * it too has card and has better variation when compared to angular material. Yesterday, I tried to use Angular Material and found it difficult to align center of the page but Bootstrap already has one dedicated for center
