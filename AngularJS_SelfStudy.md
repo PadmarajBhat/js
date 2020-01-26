@@ -217,7 +217,20 @@
     * first install bootstrap : ```npm install bootstrap```
     * refer bootstrap in the style listing:
        * goto *node_modules* --> *bootstrap* --> css --> bootstrap.min.css then right click on the file and copy project path
-       * goto **.angular-cli.json** file and in that **styles** key should have **styles.css** as one elemnt in the array, add the copied path as the second element. change the back slash to forward slash and remove anything before to **node_module** and add **../** before it.
+       * goto **angular.json** file and in that **styles** key should have **styles.css** as one elemnt in the array, add the copied path as the second element. change the back slash to forward slash and remove anything before to **node_module** and add **../** before it.
+            * You need both jquery and bootstrap in the script array
+            ```
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+            ```
+            * and note that if angular.json file is changed then ```ng serve``` has to be re issued. Else, there wont be any impact on the bootstrap classes in your css.
     * just with these 2 steps you could observe chanages in the render of all the component's html.
     * now install ng-bootstrap : ```npm install ng-bootstrap```
     * now either of one can be done at **app.module.ts**:
