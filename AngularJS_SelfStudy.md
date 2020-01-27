@@ -246,3 +246,16 @@
         ```
         * where width is the class variable
         * multiple attribute changes can be through object assignment like ```[ngStyle]="objExp"```
+        
+* to get the max height of the current device is given in : https://stackoverflow.com/a/41334303/8693106
+    ```
+    @Component({...})
+    export class MyClass {
+
+        myInnerHeight: window.innerHeight;
+        constructor(){}
+
+    }
+    ```
+    * later use this in ngStyle as indicated above
+    * useful when <div> is empty and dynamically gets the value
