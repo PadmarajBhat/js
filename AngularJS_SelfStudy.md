@@ -237,3 +237,12 @@
       * ```import {NgbModule} from '@ng-bootstrap/ng-bootstrap';```
       * or
       * ``` import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';```
+
+* ngStyle: 
+    * when you need the page to be accessible through different device, you would want it to be flexible height and width
+    * ngStyle lets you do that programatically; the class variable can set the value like
+        ```
+        [style.height.px]="width"
+        ```
+        * where width is the class variable
+        * multiple attribute changes can be through object assignment like ```[ngStyle]="objExp"```
