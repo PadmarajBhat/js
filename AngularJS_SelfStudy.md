@@ -259,3 +259,4 @@
     ```
     * later use this in ngStyle as indicated above
     * useful when <div> is empty and dynamically gets the value
+* how to publish Angular project on github pages: https://dzone.com/articles/how-to-deploy-an-angular-application-to-github
