@@ -264,3 +264,6 @@
 * **RxJS** : Awesome table for pull vs push fundamentals
     * push is when data originator decides the data has to be sent to consumer
     * pull is when data originator already has the data and active consumer consumes data.
+
+* https://material.angular.io/cdk/scrolling/api#cdk-scrolling-services: perhaps can help me detection of the direction of scrolling on a component.
+    * on scroll to top on the first element give a modal display and perhaps scroll down on last element too.
