@@ -268,3 +268,4 @@
 * https://material.angular.io/cdk/scrolling/api#cdk-scrolling-services: perhaps can help me detection of the direction of scrolling on a component.
     * on scroll to top on the first element give a modal display and perhaps scroll down on last element too.
 * difference between DI and local variable: https://stackoverflow.com/a/5481944/8693106
+* .includes : used for searching sub string in a string
