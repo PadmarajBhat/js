@@ -61,3 +61,4 @@
   * need to decode https://www.youtube.com/watch?v=tygNPckEZbw
 * ("A" < addressString[i] && addressString[i] < "z") :  to check if the characters are only alphabets
 * !("0" <= addressString[i] && addressString[i] <= "9"): to check if char are not numbers
+* process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; enables to connect to the server with self signed vertificate.
