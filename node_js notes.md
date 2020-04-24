@@ -59,7 +59,4 @@
 
 * **charts**: import google charts to components
   * need to decode https://www.youtube.com/watch?v=tygNPckEZbw
-K
-L
-O
-Due to poor internet connection
+* ("A" < addressString[i] && addressString[i] < "z") :  to check if the characters are only alphabets
